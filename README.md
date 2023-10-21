@@ -1,23 +1,19 @@
- docker-compose up --build -d
 <h1>Question API</h1> 
 <hr>
-<h3>Описание АПИ</h3>
-Принимает json: {"questions_num": integer} на POST запрос по адресу http://localhost/questions/
-
-integer - количество заправшиваемых вопросов для викторины
+<h3>Описание</h3>
+Принимает json: {"questions_num": integer} в качестве POST запроса по адресу http://localhost/questions/ <p>
+integer - количество заправшиваемых вопросов для викторины.
+Полученные вопросы сохраняет в БД
 
 <hr>
 <h3>Запуск</h3>
 
-Скачать файл: 
-docker_compose_server/docker-compose.yaml
+<li>Скачать файл: docker_compose_server/docker-compose.yaml
+<li>Выполнить команду: docker-compose up
 
-Выполнить команду: 
-docker-compose up
-
-POSTGRES_USER: postgres
-POSTGRES_PASSWORD: postgres
-POSTGRES_DB: postgres
+POSTGRES_USER: postgres\
+POSTGRES_PASSWORD: postgres\
+POSTGRES_DB: postgres\
 volumes: ./pg_data:/var/lib/postgresql/data
 
 <hr>
