@@ -2,9 +2,9 @@
 <hr>
 <h3>Описание</h3>
 Принимает json: {"questions_num": integer} в качестве POST запроса по адресу http://localhost/questions/ <p>
-integer - количество заправшиваемых вопросов для викторины.
-Полученные вопросы сохраняет в БД
-<p>swagger url - http://localhost</p>
+integer - количество заправшиваемых вопросов для викторины.  
+Полученные вопросы сохраняет в БД  
+swagger url - http://localhost  
   
 <hr>
 <h3>Запуск</h3>
